@@ -1,0 +1,1 @@
+tạo dãy các được mũ lên, sau đó chạy vòng lặp cộng các số đó lại, nếu bằng thì count++

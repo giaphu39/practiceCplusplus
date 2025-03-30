@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1736393000 source:d:\projectc++\inclassnhapmonlaptrinh\baithidauvao\deon1\soluongnguoichoi\main.cpp
+	<iostream>
+	<algorithm>
+	<vector>
+

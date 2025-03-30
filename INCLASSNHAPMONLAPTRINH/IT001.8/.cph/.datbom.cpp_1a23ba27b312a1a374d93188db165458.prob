@@ -1,0 +1,1 @@
+{"name":"Local: datbom","url":"d:\\projectC++\\INCLASSNHAPMONLAPTRINH\\IT001.8\\datbom.cpp","tests":[{"id":1731486945950,"input":"1 3 3 1\n2 3 4 4\n3 6 5 3\n1 3 3 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\projectC++\\INCLASSNHAPMONLAPTRINH\\IT001.8\\datbom.cpp","group":"local","local":true}

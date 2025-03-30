@@ -1,0 +1,27 @@
+/*###Begin banned keyword - each of the following line if appear in code will raise error. regex supported
+###End banned keyword*/
+
+#include <iostream>
+#include <time.h>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+void Input(vector<int> &v)
+{
+	int tmp;
+	cin >> tmp;
+	while (tmp > 0) {
+		v.push_back(tmp);
+		cin >> tmp;
+	}
+}
+
+//###INSERT CODE HERE -
+
+int main() {
+	vector<int> A;
+	Input(A);
+	QuickSort(A,0,A.size()-1);
+	return 0;
+}

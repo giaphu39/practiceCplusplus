@@ -1,0 +1,428 @@
+We define super digit of an integer  using the following rules:
+
+Given an integer, we need to find the super digit of the integer.
+
+If  has only  digit, then its super digit is .
+Otherwise, the super digit of  is equal to the super digit of the sum of the digits of .
+For example, the super digit of  will be calculated as:
+
+	super_digit(9875)   	9+8+7+5 = 29 
+	super_digit(29) 	2 + 9 = 11
+	super_digit(11)		1 + 1 = 2
+	super_digit(2)		= 2  
+Example
+
+
+The number  is created by concatenating the string   times so the initial .
+
+    superDigit(p) = superDigit(9875987598759875)
+                  9+8+7+5+9+8+7+5+9+8+7+5+9+8+7+5 = 116
+    superDigit(p) = superDigit(116)
+                  1+1+6 = 8
+    superDigit(p) = superDigit(8)
+All of the digits of  sum to . The digits of  sum to .  is only one digit, so it is the super digit.
+
+Function Description
+
+Complete the function superDigit in the editor below. It must return the calculated super digit as an integer.
+
+superDigit has the following parameter(s):
+
+string n: a string representation of an integer
+int k: the times to concatenate  to make 
+Returns
+
+int: the super digit of  repeated  times
+Input Format
+
+The first line contains two space separated integers,  and .
+
+Constraints
+
+Sample Input 0
+
+148 3
+Sample Output 0
+
+3
+Explanation 0
+
+Here  and , so .
+
+super_digit(P) = super_digit(148148148) 
+               = super_digit(1+4+8+1+4+8+1+4+8)
+               = super_digit(39)
+               = super_digit(3+9)
+               = super_digit(12)
+               = super_digit(1+2)
+               = super_digit(3)
+               = 3
+Sample Input 1
+
+9875 4
+Sample Output 1
+
+8
+Sample Input 2
+
+123 3
+Sample Output 2
+
+9
+Explanation 2
+
+Here  and , so .
+
+super_digit(P) = super_digit(123123123) 
+               = super_digit(1+2+3+1+2+3+1+2+3)
+               = super_digit(18)
+               = super_digit(1+8)
+               = super_digit(9)
+               = 9
+Contest ends in 3 hours
+Submissions: 25
+Max Score: 20
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+#include <assert.h>
+2
+#include <ctype.h>
+3
+#include <limits.h>
+4
+#include <math.h>
+5
+#include <stdbool.h>
+6
+#include <stddef.h>
+7
+#include <stdint.h>
+8
+#include <stdio.h>
+9
+#include <stdlib.h>
+10
+#include <string.h>
+11
+​
+12
+char* readline();
+13
+char* ltrim(char*);
+14
+char* rtrim(char*);
+15
+char** split_string(char*);
+16
+​
+17
+int parse_int(char*);
+18
+​
+19
+/*
+20
+ * Complete the 'superDigit' function below.
+21
+ *
+22
+ * The function is expected to return an INTEGER.
+23
+ * The function accepts following parameters:
+24
+ *  1. STRING n
+25
+ *  2. INTEGER k
+26
+ */
+27
+​
+28
+int superDigit(char* n, int k) {
+29
+​
+30
+}
+31
+​
+32
+int main()
+33
+{
+34
+    FILE* fptr = fopen(getenv("OUTPUT_PATH"), "w");
+35
+​
+36
+    char** first_multiple_input = split_string(rtrim(readline()));
+37
+​
+38
+    char* n = *(first_multiple_input + 0);
+39
+​
+40
+    int k = parse_int(*(first_multiple_input + 1));
+41
+​
+42
+    int result = superDigit(n, k);
+43
+​
+44
+    fprintf(fptr, "%d\n", result);
+45
+​
+46
+    fclose(fptr);
+47
+​
+48
+    return 0;
+49
+}
+50
+​
+51
+char* readline() {
+52
+    size_t alloc_length = 1024;
+53
+    size_t data_length = 0;
+54
+​
+55
+    char* data = malloc(alloc_length);
+56
+​
+57
+    while (true) {
+58
+        char* cursor = data + data_length;
+59
+        char* line = fgets(cursor, alloc_length - data_length, stdin);
+60
+​
+61
+        if (!line) {
+62
+            break;
+63
+        }
+64
+​
+65
+        data_length += strlen(cursor);
+66
+​
+67
+        if (data_length < alloc_length - 1 || data[data_length - 1] == '\n') {
+68
+            break;
+69
+        }
+70
+​
+71
+        alloc_length <<= 1;
+72
+​
+73
+        data = realloc(data, alloc_length);
+74
+​
+75
+        if (!data) {
+76
+            data = '\0';
+77
+​
+78
+            break;
+79
+        }
+80
+    }
+81
+​
+82
+    if (data[data_length - 1] == '\n') {
+83
+        data[data_length - 1] = '\0';
+84
+​
+85
+        data = realloc(data, data_length);
+86
+​
+87
+        if (!data) {
+88
+            data = '\0';
+89
+        }
+90
+    } else {
+91
+        data = realloc(data, data_length + 1);
+92
+​
+93
+        if (!data) {
+94
+            data = '\0';
+95
+        } else {
+96
+            data[data_length] = '\0';
+97
+        }
+98
+    }
+99
+​
+100
+    return data;
+101
+}
+102
+​
+103
+char* ltrim(char* str) {
+104
+    if (!str) {
+105
+        return '\0';
+106
+    }
+107
+​
+108
+    if (!*str) {
+109
+        return str;
+110
+    }
+111
+​
+112
+    while (*str != '\0' && isspace(*str)) {
+113
+        str++;
+114
+    }
+115
+​
+116
+    return str;
+117
+}
+118
+​
+119
+char* rtrim(char* str) {
+120
+    if (!str) {
+121
+        return '\0';
+122
+    }
+123
+​
+124
+    if (!*str) {
+125
+        return str;
+126
+    }
+127
+​
+128
+    char* end = str + strlen(str) - 1;
+129
+​
+130
+    while (end >= str && isspace(*end)) {
+131
+        end--;
+132
+    }
+133
+​
+134
+    *(end + 1) = '\0';
+135
+​
+136
+    return str;
+137
+}
+138
+​
+139
+char** split_string(char* str) {
+140
+    char** splits = NULL;
+141
+    char* token = strtok(str, " ");
+142
+​
+143
+    int spaces = 0;
+144
+​
+145
+    while (token) {
+146
+        splits = realloc(splits, sizeof(char*) * ++spaces);
+147
+​
+148
+        if (!splits) {
+149
+            return splits;
+150
+        }
+151
+​
+152
+        splits[spaces - 1] = token;
+153
+​
+154
+        token = strtok(NULL, " ");
+155
+    }
+156
+​
+157
+    return splits;
+158
+}
+159
+​
+160
+int parse_int(char* str) {
+161
+    char* endptr;
+162
+    int value = strtol(str, &endptr, 10);
+163
+​
+164
+    if (endptr == str || *endptr != '\0') {
+165
+        exit(EXIT_FAILURE);
+166
+    }
+167
+​
+168
+    return value;
+169
+}

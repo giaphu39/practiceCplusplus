@@ -1,0 +1,21 @@
+/*###Begin banned keyword - each of the following line if appear in code will raise error. regex supported
+###End banned keyword*/
+
+#include <iostream>
+#define MAXN 400000
+
+//###INSERT CODE HERE -
+
+int main() {
+    int a[MAXN], n, x;
+
+    std::cin >> x;
+
+    NhapMang(a, n);
+
+    int i= LinearSearch(a, n, x);
+
+    if (i==-1) std::cout << "false";
+    else std::cout << "true";
+    return 0;
+}

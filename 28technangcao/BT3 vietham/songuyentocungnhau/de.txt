@@ -1,0 +1,28 @@
+Hãy liệt kê các cặp số nguyên tố cùng nhau trong đoạn [a, b] thoe thứ tự nhỏ đến lớn
+Các bạn mua link contest chính chủ ở đây để không bị lỗi truy cập nhé:
+[Băng Ngọc] https://www.facebook.com/profile.php?id=100087434302882
+Hoặc:
+[Trương Hoài Nghi] https://www.facebook.com/profile.php?id=100089474835342
+
+Input Format
+
+Chỉ có 1 dòng ghi 2 số a, b
+
+Constraints
+
+1<=a,b<=10^3
+
+Output Format
+
+Các cặp số i, j thỏa mãn được viết lần lượt trên từng dòng theo định dạng (i,j), theo thứ tự từ điển
+
+Sample Input 0
+
+5 8
+Sample Output 0
+
+(5,6)
+(5,7)
+(5,8)
+(6,7)
+(7,8)

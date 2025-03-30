@@ -1,0 +1,1 @@
+{"name":"Local: 1_template","url":"d:\\projectC++\\DSABT\\P1\\1_template.cpp","tests":[{"id":1740753985820,"input":"3\n8\n2 2 4 4 5 5 6 6","output":""},{"id":1740754349819,"input":"2\n8\n2 2 4 4 5 5 6 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\projectC++\\DSABT\\P1\\1_template.cpp","group":"local","local":true}

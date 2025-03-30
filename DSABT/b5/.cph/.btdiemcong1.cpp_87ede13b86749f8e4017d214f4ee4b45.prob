@@ -1,0 +1,1 @@
+{"name":"Local: btdiemcong1","url":"d:\\projectC++\\DSABT\\b5\\btdiemcong1.cpp","tests":[{"id":1742348686984,"input":"12 6 70 43 91 0 -1","output":""},{"id":1742349952185,"input":"12 6 12 43 12 0 -1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\projectC++\\DSABT\\b5\\btdiemcong1.cpp","group":"local","local":true}

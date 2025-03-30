@@ -1,0 +1,274 @@
+A  Crossword grid is provided to you, along with a set of words (or names of places) which need to be filled into the grid. Cells are marked either + or -. Cells marked with a - are to be filled with the word list.
+
+The following shows an example crossword from the input  grid and the list of words to fit, :
+
+Input 	   		Output
+
+++++++++++ 		++++++++++
++------+++ 		+POLAND+++
++++-++++++ 		+++H++++++
++++-++++++ 		+++A++++++
++++-----++ 		+++SPAIN++
++++-++-+++ 		+++A++N+++
+++++++-+++ 		++++++D+++
+++++++-+++ 		++++++I+++
+++++++-+++ 		++++++A+++
+++++++++++ 		++++++++++
+POLAND;LHASA;SPAIN;INDIA
+Function Description
+
+Complete the crosswordPuzzle function in the editor below. It should return an array of strings, each representing a row of the finished puzzle.
+
+crosswordPuzzle has the following parameter(s):
+
+crossword: an array of  strings of length  representing the empty grid
+words: a string consisting of semicolon delimited strings to fit into 
+Input Format
+
+Each of the first  lines represents , each of which has  characters, .
+
+The last line contains a string consisting of semicolon delimited  to fit.
+
+Constraints
+
+
+
+
+Output Format
+
+Position the words appropriately in the  grid, then return your array of strings for printing.
+
+Sample Input 0
+
++-++++++++
++-++++++++
++-++++++++
++-----++++
++-+++-++++
++-+++-++++
++++++-++++
+++------++
++++++-++++
++++++-++++
+LONDON;DELHI;ICELAND;ANKARA
+Sample Output 0
+
++L++++++++
++O++++++++
++N++++++++
++DELHI++++
++O+++C++++
++N+++E++++
++++++L++++
+++ANKARA++
++++++N++++
++++++D++++
+Sample Input 1
+
++-++++++++
++-++++++++
++-------++
++-++++++++
++-++++++++
++------+++
++-+++-++++
++++++-++++
++++++-++++
+++++++++++
+AGRA;NORWAY;ENGLAND;GWALIOR
+Sample Output 1
+
++E++++++++
++N++++++++
++GWALIOR++
++L++++++++
++A++++++++
++NORWAY+++
++D+++G++++
++++++R++++
++++++A++++
+++++++++++
+Sample Input 2
+
+++++++-+++
+++------++
+++++++-+++
+++++++-+++
++++------+
+++++++-+-+
+++++++-+-+
+++++++++-+
+++++++++-+
+++++++++-+
+ICELAND;MEXICO;PANAMA;ALMATY
+Sample Output 2
+
+++++++I+++
+++MEXICO++
+++++++E+++
+++++++L+++
++++PANAMA+
+++++++N+L+
+++++++D+M+
+++++++++A+
+++++++++T+
+++++++++Y+
+Contest ends in an hour
+Submissions: 3
+Max Score: 15
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+#include <bits/stdc++.h>
+2
+​
+3
+using namespace std;
+4
+​
+5
+string ltrim(const string &);
+6
+string rtrim(const string &);
+7
+​
+8
+/*
+9
+ * Complete the 'crosswordPuzzle' function below.
+10
+ *
+11
+ * The function is expected to return a STRING_ARRAY.
+12
+ * The function accepts following parameters:
+13
+ *  1. STRING_ARRAY crossword
+14
+ *  2. STRING words
+15
+ */
+16
+​
+17
+vector<string> crosswordPuzzle(vector<string> crossword, string words) {
+18
+​
+19
+}
+20
+​
+21
+int main()
+22
+{
+23
+    ofstream fout(getenv("OUTPUT_PATH"));
+24
+​
+25
+    vector<string> crossword(10);
+26
+​
+27
+    for (int i = 0; i < 10; i++) {
+28
+        string crossword_item;
+29
+        getline(cin, crossword_item);
+30
+​
+31
+        crossword[i] = crossword_item;
+32
+    }
+33
+​
+34
+    string words;
+35
+    getline(cin, words);
+36
+​
+37
+    vector<string> result = crosswordPuzzle(crossword, words);
+38
+​
+39
+    for (size_t i = 0; i < result.size(); i++) {
+40
+        fout << result[i];
+41
+​
+42
+        if (i != result.size() - 1) {
+43
+            fout << "\n";
+44
+        }
+45
+    }
+46
+​
+47
+    fout << "\n";
+48
+​
+49
+    fout.close();
+50
+​
+51
+    return 0;
+52
+}
+53
+​
+54
+string ltrim(const string &str) {
+55
+    string s(str);
+56
+​
+57
+    s.erase(
+58
+        s.begin(),
+59
+        find_if(s.begin(), s.end(), not1(ptr_fun<int, int>(isspace)))
+60
+    );
+61
+​
+62
+    return s;
+63
+}
+64
+​
+65
+string rtrim(const string &str) {
+66
+    string s(str);
+67
+​
+68
+    s.erase(
+69
+        find_if(s.rbegin(), s.rend(), not1(ptr_fun<int, int>(isspace))).base(),
+70
+        s.end()
+71
+    );
+72
+​
+73
+    return s;
+74
+}
+75
+​

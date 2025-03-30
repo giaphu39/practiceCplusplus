@@ -1,0 +1,2 @@
+int a= stoi(n);
+//ép kiểu chuổi n thành int

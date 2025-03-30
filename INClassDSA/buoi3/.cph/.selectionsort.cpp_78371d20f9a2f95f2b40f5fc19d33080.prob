@@ -1,0 +1,1 @@
+{"name":"Local: selectionsort","url":"d:\\projectC++\\INClassDSA\\buoi3\\selectionsort.cpp","tests":[{"id":1741082169818,"input":"5\n12 6 70 43 91","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\projectC++\\INClassDSA\\buoi3\\selectionsort.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: bai6heapsorttang","url":"d:\\projectC++\\DSABT\\P4\\bai6heapsorttang.cpp","tests":[{"id":1742224985744,"input":"2 1 6 9 3 0","output":""},{"id":1742350174713,"input":"12 6 12 43 12 0 -1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\projectC++\\DSABT\\P4\\bai6heapsorttang.cpp","group":"local","local":true}

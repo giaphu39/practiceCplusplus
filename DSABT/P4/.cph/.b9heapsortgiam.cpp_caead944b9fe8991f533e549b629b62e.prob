@@ -1,0 +1,1 @@
+{"name":"Local: b9heapsortgiam","url":"d:\\projectC++\\DSABT\\P4\\b9heapsortgiam.cpp","tests":[{"id":1742226265808,"input":"2 1 6 9 3 0","output":""},{"id":1742226682442,"input":"0\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\projectC++\\DSABT\\P4\\b9heapsortgiam.cpp","group":"local","local":true}

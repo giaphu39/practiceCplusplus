@@ -1,0 +1,1 @@
+{"name":"Local: BTdiemcong2","url":"d:\\projectC++\\INClassDSA\\buoi3\\BTdiemcong2.cpp","tests":[{"id":1741741562074,"input":"5\n12 6 70 43 91","output":""},{"id":1741742066758,"input":"5\n5 4 3 2 1\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\projectC++\\INClassDSA\\buoi3\\BTdiemcong2.cpp","group":"local","local":true}

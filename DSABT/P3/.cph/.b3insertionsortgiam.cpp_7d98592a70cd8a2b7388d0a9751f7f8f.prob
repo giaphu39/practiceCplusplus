@@ -1,0 +1,1 @@
+{"name":"Local: b3insertionsortgiam","url":"d:\\projectC++\\DSABT\\P3\\b3insertionsortgiam.cpp","tests":[{"id":1741182746269,"input":"7\n8 5 3 9 0 1 2","output":""},{"id":1741182758148,"input":"0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\projectC++\\DSABT\\P3\\b3insertionsortgiam.cpp","group":"local","local":true}

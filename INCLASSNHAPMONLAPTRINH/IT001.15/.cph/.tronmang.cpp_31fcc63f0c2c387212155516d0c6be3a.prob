@@ -1,0 +1,1 @@
+{"name":"Local: tronmang","url":"d:\\projectC++\\INCLASSNHAPMONLAPTRINH\\IT001.15\\tronmang.cpp","tests":[{"id":1735182353367,"input":"1\n\n5 4\n\n1 2 5 7 10\n\n2 4 9 11","output":"1 2 2 4 5 7 9 10 11"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\projectC++\\INCLASSNHAPMONLAPTRINH\\IT001.15\\tronmang.cpp","group":"local","local":true}

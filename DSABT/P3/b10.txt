@@ -1,0 +1,19 @@
+/*###Begin banned keyword - each of the following line if appear in code will raise error. regex supported
+###End banned keyword*/
+
+#include<iostream>
+
+void XuatMang(int A[], int N) {
+    for (int i = 0; i < N; i++)
+        std::cout << A[i] << '\t';
+    std::cout << std::endl;
+}
+//###INSERT CODE HERE -
+
+int main() {
+    int a[MAXN], n;
+    NhapMang(a, n);
+    SapXepSoDuongGiamAmTangVa0(a, n);
+    XuatMang(a, n);
+    return 0;
+}

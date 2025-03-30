@@ -1,0 +1,1 @@
+{"name":"Local: str","url":"d:\\projectC++\\test\\str.cpp","tests":[{"id":1735991856313,"input":"df\nsdf","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\projectC++\\test\\str.cpp","group":"local","local":true}

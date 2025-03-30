@@ -1,0 +1,1 @@
+{"name":"Local: updateoperation","url":"d:\\projectC++\\28techdsa\\kithuattrenmang\\updateoperation.cpp","tests":[{"id":1738594555503,"input":"7 3\n8 5 8 9 7 6 9\n0 5 0\n0 5 0\n1 5 1","output":"8 6 9 10 8 7 9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\projectC++\\28techdsa\\kithuattrenmang\\updateoperation.cpp","group":"local","local":true}

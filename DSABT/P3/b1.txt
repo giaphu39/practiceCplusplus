@@ -1,0 +1,19 @@
+/*###Begin banned keyword - each of the following line if appear in code will raise error. regex supported
+###End banned keyword*/
+
+
+//###INSERT CODE HERE -
+
+int main() {
+    int a[MAXN], n;
+
+    std::cin >> n;
+
+    NhapMang(a, n);
+
+    selection_sort_ascending(a, n);
+
+    std::cout << std::boolalpha << is_ascending(a, n);
+
+    return 0;
+}

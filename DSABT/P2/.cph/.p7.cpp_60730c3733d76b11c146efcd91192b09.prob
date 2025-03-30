@@ -1,0 +1,1 @@
+{"name":"Local: p7","url":"d:\\projectC++\\DSABT\\P2\\p7.cpp","tests":[{"id":1741177691210,"input":"5       8       3       5       87       0\n87","output":""},{"id":1741177699454,"input":"5       8       3       5       87       0\n0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\projectC++\\DSABT\\P2\\p7.cpp","group":"local","local":true}

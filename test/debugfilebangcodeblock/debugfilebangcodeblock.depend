@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1741687284 source:d:\projectc++\test\debugfilebangcodeblock\main.cpp
+	<iostream>
+	<time.h>
+	<vector>
+	<algorithm>
+
