@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1744707749 source:d:\projectc++\practicetest\list\ontapbook\main.cpp
+	<iostream>
+	<cstring>
+	<unordered_map>
+	<vector>
+	<utility>
+
