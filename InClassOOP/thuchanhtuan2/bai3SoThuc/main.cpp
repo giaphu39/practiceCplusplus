@@ -17,6 +17,8 @@ public:
 
     friend SoPhuc operator+(SoPhuc a, SoPhuc b);
     friend SoPhuc operator-(SoPhuc a, SoPhuc b);
+    friend soPhuc operator*(SoPhuc a, SoPhuc b);
+    friend soPhuc operator/(SoPhuc a, SoPhuc b);
     // không nên dùng friend , dùng trong public 1 tham số
 
     SoPhuc Cong(SoPhuc b){
@@ -39,6 +41,14 @@ public:
         return c;
     }
 
+    soPhuc operator*(SoPhuc a, SoPhuc b){
+        SoPhuc c;
+        c.fSoThuc = a.fSoAo * a.fSoThuc - b.fSoThuc * b.fSoAo;
+        c.fSoAo = a.fSoThuc * b.fSoAo + b.fSoThuc * a.fSoAo;
+        return c;
+    }
+
+    
     void SoPhuc::Nhap(){
         cin >> fSoThuc >> fSoAo;
     }

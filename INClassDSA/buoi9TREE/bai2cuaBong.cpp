@@ -24,9 +24,9 @@ TNODE* CreateTNode(int x) {
 }
 int Insert(TREE &T, TNODE *p) {
 	if (T) {
-		if (T->key == p->key) return 0;
-		if (T->key > p->key)
-			return Insert(T->pLeft, p);
+		if (T->key == p->key) return 0; 
+		if (T->key > p->key) // sau lần đầu khởi tạo có giá trị gốc thì
+			return Insert(T->pLeft, p);// các lần sau là T trong đệ quy nên không ảnh hưởng gốc đầu, chỉ ảnh hưởng NODE được chỉ định
 		return Insert(T->pRight, p);
 	}
 	T = p;
