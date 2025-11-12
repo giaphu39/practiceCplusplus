@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1748918777 source:d:\projectc++\inclassdsa\buoi13graph\bai16duyetdfs\main.cpp
+	<iostream>
+	<time.h>
+	<string>
+	<vector>
+	<algorithm>
+	<stack>
+	<queue>
+	<map>
+	<set>
+	<utility>
+

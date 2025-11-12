@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1747935298 source:d:\projectc++\dsabt\bttreetunlrvalnr\bai9tonggiatrimuc\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<math.h>
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1747936812 source:d:\projectc++\dsabt\bttreetunlrvalnr\timnodemaxtaimuc\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<math.h>
+	<climits>
+

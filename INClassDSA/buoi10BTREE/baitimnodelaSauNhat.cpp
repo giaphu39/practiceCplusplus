@@ -92,7 +92,7 @@ void PrintLevel(TREE t, int x, int& level){
     }
 }
 
-int MaxDepth(TREE t) {
+int MaxDepth(TREE t) { // đây là tính chiều cao
     if (t == NULL) return 0;
     int leftDepth = MaxDepth(t->pLeft);
     int rightDepth = MaxDepth(t->pRight);

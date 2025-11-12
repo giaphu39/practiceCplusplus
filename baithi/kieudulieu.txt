@@ -1,0 +1,40 @@
+| Nhu cầu                                                | Nên dùng      |
+| ------------------------------------------------------ | ------------- |
+| Biến đúng/sai                                          | `bool`        |
+| Số nguyên <= 32K                                       | `short`       |
+| Số nguyên <= 2 tỷ                                      | `int`         |
+| Số nguyên > 2 tỷ hoặc số ID cực lớn (timestamp, mã...) | `long long`   |
+| Số thực đơn giản, tiết kiệm RAM                        | `float`       |
+| Số thực cần độ chính xác cao                           | `double`      |
+| Số thực rất lớn, cần độ chính xác cực cao              | `long double` |
+
+
+| Kiểu dữ liệu         | Giá trị nhỏ nhất           | Giá trị lớn nhất           | Dùng khi...                     |
+| -------------------- | -------------------------- | -------------------------- | ------------------------------- |
+| `bool`               | 0 (false)                  | 1 (true)                   | Cần lưu đúng/sai                |
+| `char`               | -128                       | 127                        | Lưu ký tự hoặc số nhỏ           |
+| `unsigned char`      | 0                          | 255                        | Đếm số lượng nhỏ không âm       |
+| `short`              | -32,768                    | 32,767                     | Số nhỏ, tiết kiệm RAM           |
+| `unsigned short`     | 0                          | 65,535                     | Đếm số lượng vừa (0 đến 65K)    |
+| `int`                | -2,147,483,648             | 2,147,483,647              | Mặc định, đủ lớn, hiệu quả      |
+| `unsigned int`       | 0                          | 4,294,967,295              | Số nguyên không âm lớn hơn      |
+| `long`               | -2,147,483,648             | 2,147,483,647              | (Cùng size với int ở hệ 64-bit) |
+| `long long`          | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807  | Cần xử lý số rất lớn            |
+| `unsigned long long` | 0                          | 18,446,744,073,709,551,615 | Số cực lớn, không âm            |
+
+
+| Kiểu dữ liệu  | Độ chính xác | Khoảng giá trị (xấp xỉ)     | Dùng khi...                            |
+| ------------- | ------------ | --------------------------- | -------------------------------------- |
+| `float`       | 6-7 chữ số   | ±3.4×10^38                  | Tiết kiệm RAM, chấp nhận sai số nhỏ    |
+| `double`      | 15 chữ số    | ±1.7×10^308                 | Dùng mặc định khi làm việc với số thực |
+| `long double` | 18-21 chữ số | ±1.1×10^4932 (tuỳ compiler) | Cực kỳ chính xác hoặc số cực lớn       |
+
+ì sao float và double KHÔNG nên dùng để tính tiền?
+Do bản chất float và double lưu số dưới dạng nhị phân gần đúng, không lưu chính xác mọi số thập phân (như 0.1).
+
+Ví dụ: 0.1 + 0.2 != 0.3 khi dùng float/double.
+| Trường hợp             | Nên dùng kiểu gì                                                                                    | Lý do                                               |
+| ---------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| Giá tiền nhỏ, cố định  | `int` (VD: VNĐ, JPY)                                                                                | Không có phần thập phân, an toàn                    |
+| Có lẻ (phần thập phân) | ❌ KHÔNG nên dùng `float`                                                                            | Vì `float` lưu không chính xác, gây sai số làm tròn |
+| Có lẻ, cần chính xác   | ✅ `int` với đơn vị nhỏ nhất (VD: lưu bằng đơn vị xu, cent) **hoặc** `decimal` (nếu ngôn ngữ hỗ trợ) | Chính xác tuyệt đối, không sai số                   |

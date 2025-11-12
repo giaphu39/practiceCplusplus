@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1747932870 source:d:\projectc++\dsabt\bttreetunlrvalnr\bai4nodetraihonnodephai\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<math.h>
+

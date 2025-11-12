@@ -9,6 +9,7 @@ struct Node{
 struct LIST{
     Node* pHead;
     Node* pTail;
+    
 };
 
 void CreateEmptyList(LIST& l){

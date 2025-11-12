@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1748922167 source:d:\projectc++\inclassdsa\buoi13graph\bai8sobaccuadinhcohuong\main.cpp
+	<iostream>
+	<map>
+	<set>
+	<vector>
+	<utility>
+

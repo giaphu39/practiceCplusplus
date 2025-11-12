@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1747755748 source:d:\projectc++\dsabt\bttreetunlrvalnr\b1\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<math.h>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1748787160 source:d:\projectc++\inclassdsa\buoi13graph\bai2matrankedothivohuong\main.cpp
+	<iostream>
+	<map>
+	<set>
+	<vector>
+
